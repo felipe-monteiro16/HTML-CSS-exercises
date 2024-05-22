@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, (px), pt, pc
+            
+            Medidas Relativas
+            (em), ex, rem, vw, vh
+            1em == 16px
+            */
+            font-size: 1em;
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: Work Sans, Arial, Helvetica, sans-serif;
+            /* SHORTHAND FONT
+            - style -> weight -> size -> family
+            */
+        }
+        h2 {
+            font: normal bold 2em Reddit Sans;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor enim harum eveniet voluptatibus nulla, saepe est adipisci incidunt perspiciatis, explicabo officia, exercitationem at corporis? Quidem eum assumenda quia minus nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eligendi quaerat nesciunt iste quisquam odit veritatis unde atque nostrum, eveniet debitis non laborum, explicabo quidem distinctio saepe ipsum doloremque temporibus.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quisquam, iste vero quaerat nemo eum et voluptatum, numquam porro, explicabo repellendus magnam similique dicta dolorum amet. Corrupti blanditiis delectus odit.</p>
+</body>
+</html>
