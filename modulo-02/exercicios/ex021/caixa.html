@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(75, 75, 75);
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 15px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 15px;
+        }
+        footer {
+            background-color: black;
+        }
+        footer > p {
+            color: white;
+            text-align: center;
+            font-style: italic;
+            padding: 10px;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.692);
+        }
+        nav > a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 5px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        article {
+            background-color: lightgray;
+            padding: 10px;
+        }
+        aside {
+            background-color: rgb(104, 104, 104);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <p></p>
+    <main>
+        <section>
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nemo nulla vel ullam quia beatae doloribus perspiciatis, sit facilis eveniet distinctio culpa mollitia tempora quam autem amet rem dolorem. Placeat.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p><em>Desenvolvido pelo CursoemVídeo</em></p>
+    </footer>
+
+</body>
+</html>
