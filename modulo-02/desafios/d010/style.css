@@ -6,20 +6,26 @@
     font-family: 'alternative-gothic-ef';
     src: url(fonts/AlternateGothicEF\ NoTwo\ Regular.otf) format('opentype');
 }
+:root {
 
-
+    --cor1: #39DB87;
+    --cor2: #30B871;
+    --cor3: #258F58;
+    --cor4: #1B663F;
+    --cor5: #103D26;
+}
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    background-color: rgb(132, 225, 173);
+    background-color: #39423ea2;
     font-size: 1em;
     margin: 0px;
 }
 header {
     padding: 10px 5px 20px 5px;
-    background-image: linear-gradient(rgb(57, 203, 121), 60%, rgba(0, 0, 0, 0.644));
+    background-image: linear-gradient(var(--cor2), 60%, var(--cor5));
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.199);
 }
-#titulo-principal {
+header h1 {
     font-family: 'alternative-gothic-ef', Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
@@ -28,7 +34,7 @@ header {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.377);
     margin: 20px 0px;
 }
-#subtitulo-principal {
+header p {
     color: rgba(255, 255, 255, 0.753);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315);
     font-size: 1.2em;
@@ -37,7 +43,7 @@ header {
     text-align: center;
     text-indent: 0;
 }
-nav > a  {
+nav a  {
     color: white;
     text-decoration: none;
     font-weight: bolder;
@@ -48,79 +54,87 @@ nav > a  {
     height: 46m;
 
 }
-nav > a::after {
+nav a::after {
     content: '';
 }
-nav > a:hover {
+nav a:hover {
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.521);
-    color: green;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.651);
+    color: var(--cor5);
+    transition-duration: 0.4s;
 
 }  
 main {
     background-color: white;
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.288);
 }
 article {
     padding: 10px 20px;
-    text-align: justify;
+
 }
-h1 {
+main h1 {
     font-family: 'idroid', Arial, Helvetica, sans-serif;
-    color: darkgreen;
+    color: var(--cor5);
     font-size: 2em;
 }
-h2 {
+main h2 {
     font-family: 'idroid', Arial, Helvetica, sans-serif;
-    color: darkgreen;
-    background-image: linear-gradient(to right, rgba(85, 212, 148, 0.507), white) ;
+    color: var(--cor5);
+    background-image: linear-gradient(to right, #30b87293, 40%, transparent);
+    border-radius: 5px;
+    padding-left: 8px;
 }
-p {
+main p {
     text-indent: 30px;
+    line-height: 2em;
+    text-align: justify;
 }
 ul {
     list-style-type: '✔  ';
-    columns: 300px;
+    columns: 2;
 }
 li {
     text-decoration: underline;
 }
-a {
-    color: darkgreen;
+main a {
+    color: var(--cor5);
     font-weight: bolder;
     text-decoration: none;
+    border-radius: 3px;
+    padding: 1px 3px;
 }
-a::after {
+main a::after {
     content: ' 🔗';
 }
-a:hover {
+main a:hover {
     color: white;
-    background-color: darkgreen;
+    background-color: var(--cor4);
+    transition-duration: 0.3s;
+}
+main img {
+    display: block;
+    margin: 0 auto;
 }
 #youtube {
-    border: 30px solid rgb(4, 92, 41);
+    border: 30px solid var(--cor4);
     width: calc(100% - 60px);
     height: 100%;
     aspect-ratio: 16 / 9;
 
 }
-.imagem {
-    display: block;
-    margin: 0 auto;
-}
-
 #descricao-extra {
     padding: 10px;
     border-radius: 0px 0px 20px 20px;
-    background-color: rgba(144, 238, 175, 0.671);
+    background-color: #39db8748;
     color: black;
 }
 #titulo-extra {
     color: white;
-    background-color: rgb(14, 182, 70);
+    background-color: var(--cor2);
     border-radius: 20px 20px 0px 0px;
     font: bold 1.3em Arial;
     padding: 20px 20px;
@@ -132,13 +146,10 @@ a:hover {
 footer > p {
     width: 100%;
     height: 2.5em;
-    background-color: rgb(4, 92, 41);
+    background-color: var(--cor5);
     margin: 30px 0px 0px 0px;
     border: 0px;
     color: white;
     text-align: center;
     padding-top: 1em;
-}
-footer > p > em {
-    font-weight: bolder;
 }
